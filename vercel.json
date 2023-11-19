@@ -2,14 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "./index.js",
+      "src": "index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
+      "src": "/api/v1/currencies",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/api/v1/currencies/today",
+      "dest": "/index.js"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/index.js"
     }
   ]
 }
