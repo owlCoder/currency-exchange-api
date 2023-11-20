@@ -95,7 +95,7 @@ Retrieves a list of all available currencies with their codes, numbers, and exch
 
 If an error occurs during the API call, it will return a JSON response with an error message and a status code 500.
 
-## Licence
----
-This project is licensed under the
-### [GNU GPL V3](LICENSE.md)
+## License
+
+This project is licensed under the GPL 3.0 License. See the [LICENSE](LICENSE) file for details.
+```
