@@ -21,6 +21,7 @@ app.get('/api/v1/currencies', async (req, res) => {
     // Add RSD currency
     currencies.push({"code": "RSD"});
 
+    
     $('#index\\:srednjiKursLista tr').each((index, element) => {
       const row = $(element).find('td:first-child'); // Select the first column
 
