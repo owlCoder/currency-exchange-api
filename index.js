@@ -128,6 +128,7 @@ app.get('/api/v2/currencies/yesterday', async (req, res) => {
       rates: adjustedRates,
     });
   } catch (error) {
+    console.error('Error fetching data:', error.message);
     res.status(500).json({ success: false, error: 'Internal Server Error' });
   }
 });
